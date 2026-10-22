@@ -128,7 +128,7 @@ PowerShell 脚本执行受限时，可直接运行：
 ```powershell
 npm run build
 npm run test:web
-.\.venv\Scripts\python.exe -m pytest tests -q --basetemp .cache/pytest-local
+.\.venv\Scripts\python.exe -m pytest tests -q --basetemp .pytest-tmp
 ```
 
 后端测试使用独立进程、端口与 SQLite；界面测试使用 jsdom / React Testing Library，覆盖切页、离线、迟到响应、存储失败和重试。测试通过不等于浏览器视觉验收或平台兼容认证。[v0.2 验证摘要](docs/verification-v02.md)与[迭代记录](docs/iteration-v02.md)可供核对。

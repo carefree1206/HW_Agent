@@ -4,6 +4,21 @@
 
 负责人角色占位：A 平台与模型，B 后端与算法，C 产品与评测；具体成员在 Issue 中认领。工作量为开发人日估计，不含申请资源和等待合作方的时间。任务完成需要代码/配置、可复现步骤、原始记录和文档状态同时更新。
 
+## GitHub 认领入口
+
+已建立 8 个 Issue，含 20 项子任务，初始全部待认领。以下链接与仓库内任务编号一一对应，实际完成状态以 Issue 为准。
+
+| 主题 | Issue | 子任务 | 里程碑 |
+| --- | --- | --- | --- |
+| E01 平台最小链路 | [#1](https://github.com/carefree1206/HW_Agent/issues/1) | T01–T03 | [G1](https://github.com/carefree1206/HW_Agent/milestone/1) |
+| E02 多模态证据 | [#2](https://github.com/carefree1206/HW_Agent/issues/2) | T04–T06 | [G2](https://github.com/carefree1206/HW_Agent/milestone/2) |
+| E03 RAG | [#3](https://github.com/carefree1206/HW_Agent/issues/3) | T07–T08 | G2 |
+| E04 四角色工作流 | [#4](https://github.com/carefree1206/HW_Agent/issues/4) | T09–T10 | G2 |
+| E05 主动核实与调度 | [#5](https://github.com/carefree1206/HW_Agent/issues/5) | T11–T12 | G2 |
+| E06 独立评测 | [#6](https://github.com/carefree1206/HW_Agent/issues/6) | T13–T15 | G2 |
+| E07 LoRA | [#7](https://github.com/carefree1206/HW_Agent/issues/7) | T16–T17 | G2 |
+| E08 试用与交付 | [#8](https://github.com/carefree1206/HW_Agent/issues/8) | T18–T20 | [G3](https://github.com/carefree1206/HW_Agent/milestone/3) |
+
 ## G1：平台最小链路
 
 ### E01 · P0 · AgentArts 联通与角色适配基础

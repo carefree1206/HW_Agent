@@ -56,7 +56,7 @@ MCP 本地路径实现协议初始化、工具发现和 JSON 工具调用，保�
 ```powershell
 npm run build
 npm run test:web
-.\.venv\Scripts\python.exe -m pytest tests -q --basetemp .cache/pytest-local
+.\.venv\Scripts\python.exe -m pytest tests -q --basetemp .pytest-tmp
 ```
 
 本轮最终结果：生产构建成功，**30 项 Python 测试、18 项界面测试全部通过**。可核对[验证摘要](verification-v02.md)及其脱敏机器可读记录；原始 JUnit 留在本机 `artifacts/`。共 48 项，这不是 48 个独立灾害场景或模型能力评分。

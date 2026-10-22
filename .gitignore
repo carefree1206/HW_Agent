@@ -3,6 +3,7 @@ dist/
 .venv/
 .cache/
 .pytest_cache/
+.pytest-tmp/
 __pycache__/
 *.pyc
 .env

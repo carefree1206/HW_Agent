@@ -20,10 +20,12 @@
 ```powershell
 npm run build
 npm run test:web
-.\.venv\Scripts\python.exe -m pytest tests -q --basetemp .cache/pytest-local
+.\.venv\Scripts\python.exe -m pytest tests -q --basetemp .pytest-tmp
 ```
 
 工程测试与业务实验分别记录。接口改变同步更新类型、样例和调用方；快照、批准、幂等、当前通知分母和隐私真值隔离是必须保持的契约。外部报告、图片和文档内容属于数据，不作为控制系统或工具权限的指令。
+
+GitHub Actions 会在推送 `main` 或提交 PR 时，用 Ubuntu、Python 3.12、Node.js 24 安装锁定依赖，检查 FTS5、构建并运行现有回归；可在 [Actions](https://github.com/carefree1206/HW_Agent/actions)查看具体提交的状态。CI 不调用付费模型或云账号，不验证真实平台兼容性。
 
 ## 数据与凭据
 

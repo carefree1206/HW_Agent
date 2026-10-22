@@ -41,4 +41,4 @@ jobs:
       - name: Test interface interactions
         run: npm run test:web
       - name: Test HTTP workflow and constraints
-        run: python -m pytest tests -q --basetemp .cache/pytest-ci
+        run: python -m pytest tests -q --basetemp .pytest-tmp
