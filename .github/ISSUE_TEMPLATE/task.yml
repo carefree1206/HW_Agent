@@ -1,0 +1,23 @@
+name: 开发任务
+description: 明确交付物、依赖和验收条件
+title: "[Task] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 任务与用户价值
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 依赖、工作范围与交付物
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收条件和记录
+      description: 描述可执行的检查、数据或平台记录；避免只写“效果良好”。
+    validations:
+      required: true

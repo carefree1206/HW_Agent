@@ -1,0 +1,75 @@
+{
+  "schema_version": "design-v1",
+  "data_class": "synthetic_design_example",
+  "mode": "drill",
+  "incident_id": "DRILL-001-INC-01",
+  "snapshot_version": 7,
+  "simulation_time": "2026-10-18T02:17:00+08:00",
+  "coverage_model": "synthetic_graph_v1",
+  "regions": [
+    {
+      "region_id": "R12",
+      "display_name": "演练区域十二",
+      "communication_status": "unknown",
+      "last_confirmed_at": "2026-10-18T01:37:00+08:00",
+      "requires_verification": true,
+      "evidence_ids": ["E001", "E002", "E003"]
+    }
+  ],
+  "resources": [
+    {
+      "resource_id": "DRILL-CONSOLE-01",
+      "type": "remote_probe_console",
+      "status": "available",
+      "remaining_probe_budget": 2
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E001",
+      "modality": "telemetry",
+      "source_id": "DRILL-MONITOR-01",
+      "raw_ref": "design-example://telemetry/E001",
+      "observed_at": "2026-10-18T02:17:00+08:00",
+      "received_at": "2026-10-18T02:17:01+08:00",
+      "entity_id": "S08",
+      "location_id": "R12",
+      "facts": {"event_type": "heartbeat_missing", "last_heartbeat_at": "2026-10-18T01:37:00+08:00"},
+      "unknown_fields": ["current_link_status", "current_power_status"],
+      "verification_status": "source_observation",
+      "conflicting_evidence_ids": []
+    },
+    {
+      "evidence_id": "E002",
+      "modality": "audio_transcript",
+      "source_id": "DRILL-REPORTER-01",
+      "raw_ref": "design-example://audio/E002",
+      "observed_at": null,
+      "received_at": "2026-10-18T02:16:00+08:00",
+      "entity_id": "S08",
+      "location_id": "R12",
+      "transcript": "十二区那个站联系不上，备用电量还没确认。",
+      "evidence_spans": [{"text": "备用电量还没确认"}],
+      "facts": {"event_type": "contact_failure_report"},
+      "unknown_fields": ["occurred_at", "battery_remaining", "current_link_status"],
+      "verification_status": "unverified_report",
+      "conflicting_evidence_ids": []
+    },
+    {
+      "evidence_id": "E003",
+      "modality": "image_report",
+      "source_id": "DRILL-REPORTER-02",
+      "raw_ref": "design-example://image/E003",
+      "observed_at": null,
+      "received_at": "2026-10-18T02:15:00+08:00",
+      "entity_id": "ROAD-12",
+      "location_id": "R12",
+      "report_text": "这是昨天桥边的照片，今天道路是否能通行还没有核实。",
+      "facts": {"event_type": "historical_road_image_report", "time_expression": "昨天"},
+      "unknown_fields": ["captured_at", "current_passability"],
+      "verification_status": "unverified_report",
+      "conflicting_evidence_ids": []
+    }
+  ],
+  "trace_id": null
+}

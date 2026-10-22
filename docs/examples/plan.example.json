@@ -1,0 +1,40 @@
+{
+  "schema_version": "design-v1",
+  "data_class": "synthetic_design_example",
+  "mode": "drill",
+  "incident_id": "DRILL-001-INC-01",
+  "plan_id": "DRILL-001-PLAN-01",
+  "plan_scope": "probe_only",
+  "snapshot_version": 7,
+  "policy_version": "DRILL-PROBE-POLICY-v1",
+  "status": "draft",
+  "solver_status": "FEASIBLE",
+  "solver_status_note": "设计样例中的拟定状态，并非实际求解结果；仅表示核实动作范围，不表示已找到最终通信恢复方案。",
+  "constraints": [
+    {"constraint_id": "C1", "type": "max_probe_actions", "value": 2},
+    {"constraint_id": "C2", "type": "resource_available", "resource_id": "DRILL-CONSOLE-01"}
+  ],
+  "actions": [
+    {
+      "action_id": "A1",
+      "type": "remote_probe",
+      "probe_type": "query_station_controller",
+      "resource_id": "DRILL-CONSOLE-01",
+      "target_station_id": "S08",
+      "target_region_id": "R12",
+      "cost": {"probe_budget_units": 1},
+      "expected_outputs": ["current_link_status", "current_power_status"],
+      "evidence_ids": ["E001", "E002"],
+      "status": "planned"
+    }
+  ],
+  "unresolved": [
+    {"field": "battery_remaining", "status": "unknown"},
+    {"field": "ROAD-12.current_passability", "status": "unknown"}
+  ],
+  "follow_up": "读取核实结果并生成新快照，再单独求解通信保障方案。",
+  "approval_id": null,
+  "execution_allowed": false,
+  "actual_outcomes": null,
+  "trace_id": null
+}

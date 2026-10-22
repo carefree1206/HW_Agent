@@ -1,0 +1,501 @@
+{
+  "drill_id": "DRILL-F569675097C9",
+  "title": "云溪县 · 暴雨通信保障演练",
+  "scenario_version": "yunxi-1.0",
+  "version": 1,
+  "simulation_time": "02:17",
+  "mode": "local_rules",
+  "regions": [
+    {
+      "id": "R01",
+      "name": "松林乡",
+      "x": 152,
+      "y": 125,
+      "people": 860,
+      "status": "online",
+      "kind": "village",
+      "station_id": "S01",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R02",
+      "name": "青石村",
+      "x": 326,
+      "y": 93,
+      "people": 420,
+      "status": "online",
+      "kind": "village",
+      "station_id": "S02",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R03",
+      "name": "云溪县城",
+      "x": 458,
+      "y": 207,
+      "people": 4200,
+      "status": "online",
+      "kind": "center",
+      "station_id": "S03",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R04",
+      "name": "白鹭镇",
+      "x": 641,
+      "y": 131,
+      "people": 1230,
+      "status": "online",
+      "kind": "town",
+      "station_id": "S04",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R05",
+      "name": "东桥村",
+      "x": 778,
+      "y": 244,
+      "people": 560,
+      "status": "online",
+      "kind": "village",
+      "station_id": "S05",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R06",
+      "name": "南湾村",
+      "x": 629,
+      "y": 340,
+      "people": 780,
+      "status": "online",
+      "kind": "village",
+      "station_id": "S04",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R07",
+      "name": "河畔社区",
+      "x": 408,
+      "y": 367,
+      "people": 1160,
+      "status": "online",
+      "kind": "town",
+      "station_id": "S03",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R08",
+      "name": "翠竹村",
+      "x": 214,
+      "y": 298,
+      "people": 360,
+      "status": "online",
+      "kind": "village",
+      "station_id": "S06",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R09",
+      "name": "南山村",
+      "x": 114,
+      "y": 448,
+      "people": 290,
+      "status": "online",
+      "kind": "village",
+      "station_id": "S06",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": true,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R10",
+      "name": "新桥镇",
+      "x": 465,
+      "y": 500,
+      "people": 930,
+      "status": "degraded",
+      "kind": "town",
+      "station_id": "S07",
+      "last_seen": "02:16",
+      "reports": 1,
+      "verified": false,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R11",
+      "name": "溪口村",
+      "x": 683,
+      "y": 468,
+      "people": 510,
+      "status": "offline",
+      "kind": "village",
+      "station_id": "S08",
+      "last_seen": "02:16",
+      "reports": 0,
+      "verified": false,
+      "recovery_kind": "repair_backhaul"
+    },
+    {
+      "id": "R12",
+      "name": "鹿鸣村",
+      "x": 824,
+      "y": 392,
+      "people": 286,
+      "status": "unknown",
+      "kind": "village",
+      "station_id": "S08",
+      "last_seen": "01:37",
+      "reports": 0,
+      "verified": false,
+      "recovery_kind": "deploy_portable"
+    }
+  ],
+  "roads": [
+    {
+      "id": "RD01",
+      "from": "R01",
+      "to": "R02",
+      "minutes": 12,
+      "open": true
+    },
+    {
+      "id": "RD02",
+      "from": "R01",
+      "to": "R08",
+      "minutes": 14,
+      "open": true
+    },
+    {
+      "id": "RD03",
+      "from": "R02",
+      "to": "R03",
+      "minutes": 10,
+      "open": true
+    },
+    {
+      "id": "RD04",
+      "from": "R02",
+      "to": "R04",
+      "minutes": 18,
+      "open": true
+    },
+    {
+      "id": "RD05",
+      "from": "R03",
+      "to": "R04",
+      "minutes": 12,
+      "open": true
+    },
+    {
+      "id": "RD06",
+      "from": "R03",
+      "to": "R07",
+      "minutes": 9,
+      "open": true
+    },
+    {
+      "id": "RD07",
+      "from": "R03",
+      "to": "R08",
+      "minutes": 15,
+      "open": true
+    },
+    {
+      "id": "RD08",
+      "from": "R04",
+      "to": "R05",
+      "minutes": 11,
+      "open": true
+    },
+    {
+      "id": "RD09",
+      "from": "R04",
+      "to": "R06",
+      "minutes": 16,
+      "open": true
+    },
+    {
+      "id": "RD10",
+      "from": "R05",
+      "to": "R06",
+      "minutes": 10,
+      "open": true
+    },
+    {
+      "id": "RD11",
+      "from": "R05",
+      "to": "R12",
+      "minutes": 18,
+      "open": true
+    },
+    {
+      "id": "RD12",
+      "from": "R06",
+      "to": "R07",
+      "minutes": 13,
+      "open": true
+    },
+    {
+      "id": "RD13",
+      "from": "R06",
+      "to": "R11",
+      "minutes": 10,
+      "open": true
+    },
+    {
+      "id": "RD14",
+      "from": "R06",
+      "to": "R12",
+      "minutes": 12,
+      "open": true
+    },
+    {
+      "id": "RD15",
+      "from": "R07",
+      "to": "R10",
+      "minutes": 12,
+      "open": true
+    },
+    {
+      "id": "RD16",
+      "from": "R08",
+      "to": "R09",
+      "minutes": 11,
+      "open": true
+    },
+    {
+      "id": "RD17",
+      "from": "R10",
+      "to": "R11",
+      "minutes": 13,
+      "open": true
+    },
+    {
+      "id": "RD18",
+      "from": "R11",
+      "to": "R12",
+      "minutes": 9,
+      "open": true
+    }
+  ],
+  "resources": [
+    {
+      "id": "TEAM-01",
+      "name": "通信保障一队",
+      "type": "team",
+      "location": "R03",
+      "status": "available",
+      "capacity": 1,
+      "icon": "users"
+    },
+    {
+      "id": "TEAM-02",
+      "name": "通信保障二队",
+      "type": "team",
+      "location": "R07",
+      "status": "available",
+      "capacity": 1,
+      "icon": "users"
+    },
+    {
+      "id": "PORTABLE-01",
+      "name": "便携通信设备",
+      "type": "portable",
+      "location": "R03",
+      "status": "available",
+      "battery": 180,
+      "icon": "radio"
+    },
+    {
+      "id": "POWER-01",
+      "name": "移动电源",
+      "type": "power",
+      "location": "R03",
+      "status": "available",
+      "battery": 240,
+      "icon": "battery"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-001",
+      "region_id": "R12",
+      "title": "站点心跳停止更新",
+      "modality": "telemetry",
+      "source": "演练监测节点 S08",
+      "time": "02:17",
+      "event_time": "01:37",
+      "text": "鹿鸣村最后一次心跳为 01:37，连续 40 个演练分钟未收到更新。当前链路及供电状态待核实。",
+      "verification": "observed",
+      "unknown_fields": [
+        "链路状态",
+        "剩余电量"
+      ],
+      "facts": [
+        "心跳缺失 40 分钟"
+      ],
+      "stale": false
+    },
+    {
+      "id": "EV-002",
+      "region_id": "R11",
+      "title": "溪口村链路异常",
+      "modality": "telemetry",
+      "source": "演练监测节点 S08",
+      "time": "02:13",
+      "event_time": "02:13",
+      "text": "演练链路接口返回连接失败，需要通信保障。",
+      "verification": "observed",
+      "unknown_fields": [],
+      "facts": [
+        "节点链路异常"
+      ],
+      "stale": false
+    },
+    {
+      "id": "EV-003",
+      "region_id": "R10",
+      "title": "新桥镇网络拥塞",
+      "modality": "text",
+      "source": "现场演练报告",
+      "time": "02:11",
+      "event_time": "02:11",
+      "text": "新桥镇网络连接间歇中断，文字消息可低速传输。",
+      "verification": "reported",
+      "unknown_fields": [
+        "拥塞原因"
+      ],
+      "facts": [
+        "连接质量下降"
+      ],
+      "stale": false
+    }
+  ],
+  "assessment": null,
+  "plans": [],
+  "active_plan_id": null,
+  "messages": [],
+  "notices": [],
+  "terminal_links": {
+    "R01": true,
+    "R02": true,
+    "R03": true,
+    "R04": true,
+    "R05": true,
+    "R06": true,
+    "R07": true,
+    "R08": true,
+    "R09": true,
+    "R10": true,
+    "R11": false,
+    "R12": false
+  },
+  "agent_stages": {
+    "assess": "idle",
+    "probe": "idle",
+    "plan": "idle",
+    "verify": "idle"
+  },
+  "probe_budget": 2,
+  "events": [
+    {
+      "id": "4f183129c9c8",
+      "at": "2026-10-22T15:07:05.408+08:00",
+      "time": "02:17",
+      "title": "云溪演练已就绪",
+      "detail": "9 个区域链路可达，2 个区域受影响，鹿鸣村状态待核实。所有地名及监测数据均为演练合成。",
+      "kind": "info",
+      "actor": "系统",
+      "region_id": null
+    }
+  ],
+  "traces": [],
+  "tool_calls": [],
+  "schema_version": 2,
+  "jobs": {},
+  "planning_diagnostics": null,
+  "metrics": {
+    "total_regions": 12,
+    "online": 9,
+    "affected": 2,
+    "unknown": 1,
+    "available_resources": 4,
+    "terminal_received": 0,
+    "human_confirmed": 0,
+    "tool_calls": 0,
+    "reports": 3,
+    "targets": 12,
+    "sent": 0,
+    "queued": 0,
+    "probes_remaining": 2
+  },
+  "app_version": "0.2.0",
+  "delivery": {
+    "active_notice_id": null,
+    "target_region_ids": [],
+    "messages": []
+  },
+  "integrations": [
+    {
+      "id": "workflow",
+      "name": "角色协作流程",
+      "status": "local",
+      "detail": "本地规则执行，未调用大模型"
+    },
+    {
+      "id": "mcp",
+      "name": "MCP 工具",
+      "status": "local",
+      "detail": "3 个 HTTP 服务 · 12 个业务工具"
+    },
+    {
+      "id": "rag",
+      "name": "知识检索",
+      "status": "local",
+      "detail": "8 条版本化规则 · 中文双字 BM25"
+    },
+    {
+      "id": "agentarts",
+      "name": "华为 AgentArts",
+      "status": "pending",
+      "detail": "待账号、API 与鉴权联调"
+    },
+    {
+      "id": "multimodal",
+      "name": "视觉 / SIS",
+      "status": "pending",
+      "detail": "支持素材保存，云端模型待接入"
+    },
+    {
+      "id": "lora",
+      "name": "领域 LoRA",
+      "status": "pending",
+      "detail": "训练尚未开展"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-22",
+  "environment": {
+    "os": "Windows",
+    "python": "3.12",
+    "node": "24"
+  },
+  "scope": "Local synthetic drill. Python HTTP/engine tests and jsdom interaction tests. No cloud/model/visual evaluation.",
+  "reports": [
+    {
+      "suite": "python",
+      "count": 30,
+      "passed": 30,
+      "source_sha256": "68fb6c851b0c38423cb572bf606bd8c794d0101d448f60f684d57da3e912c91e",
+      "cases": [
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_static_app_and_honest_initial_state",
+          "seconds": 1.597,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_mcp_handshake_discovery_and_rejected_arguments",
+          "seconds": 0.049,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_probe_budget_is_idempotent_and_plan_is_real",
+          "seconds": 1.71,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_approval_and_snapshot_protect_execution",
+          "seconds": 3.985,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_low_battery_reports_infeasible_without_fabricated_plan",
+          "seconds": 1.853,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_dispatch_and_receipts_are_separate_idempotent_stages",
+          "seconds": 3.682,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_reports_upload_and_stale_evidence_are_persisted",
+          "seconds": 2.111,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_export_contains_actual_calls_and_capability_boundaries",
+          "seconds": 2.079,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_new_notice_does_not_inherit_historical_confirmation",
+          "seconds": 2.891,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_old_page_cannot_write_after_reset",
+          "seconds": 0.036,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_idempotency_key_rejects_changed_probe_arguments",
+          "seconds": 0.04,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_approval_still_checked_when_retry_hits_cache",
+          "seconds": 2.937,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_probe_uses_requested_region_observation_not_a_fixed_story",
+          "seconds": 0.039,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_media_and_origin_checks_reject_misleading_requests",
+          "seconds": 0.02,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_plan_explains_alternatives_and_independent_checks",
+          "seconds": 2.117,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_infeasible_plan_records_specific_energy_shortfall",
+          "seconds": 1.83,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_reset_archives_records_and_export_never_leaks_hidden_truth",
+          "seconds": 2.88,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_knowledge_is_versioned_ranked_and_returns_no_irrelevant_fill",
+          "seconds": 0.022,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_mcp_explicitly_rejects_unsupported_transport_and_invalid_id",
+          "seconds": 0.018,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_complete_tool_responses_survive_truncation_reused_rpc_ids_and_archival",
+          "seconds": 0.058,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_legacy_browser_must_refresh_before_unscoped_mutation",
+          "seconds": 0.021,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_new_proposal_supersedes_old_approval_even_without_world_change",
+          "seconds": 3.9,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_http_workflow",
+          "name": "test_repeated_execution_or_reassessment_does_not_regress_completed_receipts",
+          "seconds": 4.783,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_validator_rejects_infeasibility_even_with_matching_digest[empty_route]",
+          "seconds": 0.002,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_validator_rejects_infeasibility_even_with_matching_digest[empty_tasks]",
+          "seconds": 0.001,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_validator_rejects_infeasibility_even_with_matching_digest[underbudget]",
+          "seconds": 0.002,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_validator_rejects_infeasibility_even_with_matching_digest[duplicate_region]",
+          "seconds": 0.002,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_validator_rejects_infeasibility_even_with_matching_digest[false_eta]",
+          "seconds": 0.001,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_validator_rejects_infeasibility_even_with_matching_digest[changed_rules]",
+          "seconds": 0.001,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests.test_planning_validation",
+          "name": "test_an_old_task_cannot_mutate_after_drill_reset",
+          "seconds": 0.019,
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "web",
+      "count": 18,
+      "passed": 18,
+      "source_sha256": "68962d36f1eda933b9d754e8bc7b92e364b4e29d1e1fa9cb58d7ff66446b02f1",
+      "cases": [
+        {
+          "suite": "tests/web/api.test.ts",
+          "name": "写请求带有发送时的演练编号，错误保留可解释上下文",
+          "seconds": 0.0065945,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/api.test.ts",
+          "name": "无法解析的响应不会被误报为成功",
+          "seconds": 0.0012449,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/api.test.ts",
+          "name": "持久化失败时仍保留会话内的待发确认，并返回真实持久化状态",
+          "seconds": 0.0010579,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/app.test.tsx",
+          "name": "慢请求期间合并刷新，先完成的旧请求不会覆盖后续状态",
+          "seconds": 0.2254407,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/app.test.tsx",
+          "name": "重置需在页面确认，归档完成后新报告携带新的演练编号",
+          "seconds": 0.6371372,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/evidence.test.tsx",
+          "name": "截断摘要有明确标记，并可读取完整实际响应",
+          "seconds": 0.1947511,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/evidence.test.tsx",
+          "name": "完整响应身份或摘要不匹配时保留错误，不展示为已验证结果",
+          "seconds": 0.0720011,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/evidence.test.tsx",
+          "name": "无匹配时不显示上一轮的知识条目",
+          "seconds": 0.4800011,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/terminal.test.tsx",
+          "name": "现场终端的持久化与竞态 > 切换页面后仍可离线确认，重开后恢复同步且只补发一次",
+          "seconds": 0.4360789,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/terminal.test.tsx",
+          "name": "现场终端的持久化与竞态 > 区域切换后丢弃迟到响应，不替其他区域接收消息",
+          "seconds": 0.1266443,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/terminal.test.tsx",
+          "name": "现场终端的持久化与竞态 > 新演练不会读取或重放旧演练回执，即使通知和消息编号相同",
+          "seconds": 0.0748091,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/terminal.test.tsx",
+          "name": "现场终端的持久化与竞态 > 本地缓存结构损坏时仍能打开终端并重新同步",
+          "seconds": 0.0214942,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/workflows.test.tsx",
+          "name": "故事起点能启动核实，收到一个确认后仍显示其余未完成目标",
+          "seconds": 0.1798279,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/workflows.test.tsx",
+          "name": "方案页面同时呈现已选与备选分配，不隐藏耗时取舍",
+          "seconds": 0.0196239,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/workflows.test.tsx",
+          "name": "不可行页面保留具体缺口与下一步，并标记过时诊断",
+          "seconds": 0.0074652,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/workflows.test.tsx",
+          "name": "历史确认不显示在当前通知的表格和人员指标中",
+          "seconds": 0.0564147,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/workflows.test.tsx",
+          "name": "确认弹窗限制键盘焦点并支持 Escape 返回原按钮",
+          "seconds": 0.0733015,
+          "outcome": "passed"
+        },
+        {
+          "suite": "tests/web/workflows.test.tsx",
+          "name": "历史演练可读取批准记录并导出归档",
+          "seconds": 0.1026419,
+          "outcome": "passed"
+        }
+      ]
+    }
+  ],
+  "http_check": {
+    "checked_at": "2026-10-22T07:53:10.742633+00:00",
+    "app_version": "0.2.0",
+    "page_status": 200,
+    "assets": [
+      {
+        "path": "/assets/index-vYSzykbz.js",
+        "status": 200
+      },
+      {
+        "path": "/assets/index-DSt-pCYn.css",
+        "status": 200
+      }
+    ],
+    "candidates": 2,
+    "plan_validation_passed": true,
+    "knowledge_documents": 8,
+    "history_status": 200,
+    "full_tool_result_status": 200,
+    "tool_result_hash_matches": true
+  },
+  "source_sha256": {
+    "backend/__init__.py": "06b5d8f02bc6486035f8e035b68821e97f9c3c049609382eeb329d1f8dfb7ce2",
+    "backend/engine.py": "a99ca323a650cbd7a29292960cf7274eb1b2f4bf5d7860ffd453a284f29c3dca",
+    "backend/errors.py": "f7ae68147d3e25d504c7ca866793590564b4d166e624ab2bc2cc56fce6580504",
+    "backend/knowledge.py": "9b3691e7f5de395ec7818a27342ecfeaf41be809ee07bb0f1345739d4f777116",
+    "backend/main.py": "d794bcdd584a92f9531aaafe81746915b8e38e847251a1a14ce38a67bfe08036",
+    "backend/planning.py": "cdc435920b2692753b982e703e89795a87e834ad58c949b64dacea694bc342ff",
+    "backend/scenario.py": "70d2bad5070b85888f157225e743e719763de4625785510266fea09a51180306",
+    "backend/store.py": "c424dafdaa545127ae3e0a9039890220edd2d932c0eaf22bcc91238e61e73695",
+    "docs/knowledge/drill-sop.md": "371516d1e67f540dd3503aff2d907b163efe78674a31c11712c9b5dab8bc80d6",
+    "package-lock.json": "2258d1d9278ac8bb99bcbf7ae3804960097acd2d5e20b6f87bedbd398e74af6e",
+    "requirements-lock.txt": "a35bb088a0e646f02076e6fbda9362924adf98b498c366ad6a1098f73b4bc4f1",
+    "tests/fixtures/initial-state.json": "d0cd2acfbdd16fe93a85d0c0f2111ec118b11456cf9e46a1ad15b7eba5f839c5",
+    "tests/test_http_workflow.py": "9d6cb911a1015aaed1bed7cb0670de739b9086041fb715b7c20ec4795aeda752",
+    "tests/test_planning_validation.py": "68b152b31974f5399c7f5f581180ec9a5dc20998e3b8727e97e307038ed4c23c",
+    "tests/web/api.test.ts": "8dbdd093f55dcc147b8ccb207b229d690d999d05fa330af86cf620ca00198d14",
+    "tests/web/app.test.tsx": "be4b02b789b220101cd613466bd459f119d74ae6948e3f4feadacefbca192e06",
+    "tests/web/evidence.test.tsx": "7464bfbb5779339e3e143c541557006e58ab598fce0a5ca13f828b423762f050",
+    "tests/web/fixtures.ts": "2bcdc41c6d85ef759193ba46434e9a7281e7c3fb2123bb73a70bc67c71a3f8e6",
+    "tests/web/setup.ts": "78c01d6981d343c85904860937b6f5a965b259a1c228fae09447603ba448401b",
+    "tests/web/terminal.test.tsx": "f430c5877fbe82b0208fb107f233ff236de4e4876414f81eb722a4e1154b0057",
+    "tests/web/workflows.test.tsx": "9ec2efa81c67ce2dcd2f8e8cf62f5f7ba31d7be1819349b9d79e479475f27e0b",
+    "tsconfig.json": "be689ab2120ba86a2c5e41d007f5d86a788a5038967314453b2f95cb434acb54",
+    "vite.config.ts": "3e73dae3621ab523e9e6f63d54b956eb738e3eb0ea83c7a76d87cef9761ed3ca",
+    "vitest.config.ts": "4136f0bfac6784ccdf754410b395205c9b8efe111204fc10094a32ab3509293c",
+    "web/src/api.ts": "dbb3cf8db910533d4b44fca38392e80bbd52c81172acc0408cf61849dd8f5aa1",
+    "web/src/App.tsx": "731334a584bc5f4a540fb705c3b19605e7b7f8ac76ba38d27d3ea1dd18cd12d6",
+    "web/src/ArchivePanel.tsx": "a1010a8686eb395bb321ac3dfe031033662e3b43b5981706ad160b4b4a8321da",
+    "web/src/common.tsx": "ed2a957ec8b357b1bd2d8614fc48ac0554a2d4eea060d745520e13ce3b874d03",
+    "web/src/Dashboard.tsx": "04deb52eff1682ddc041f7ddeca292c280e0f38fa8f357bbff8895c10fdbe297",
+    "web/src/iteration.css": "6b0c78de4805d7e27bbc373454fb23ee2b755d14ff3cf4e5f9efac3c8d7e74a0",
+    "web/src/main.tsx": "29aef0bc3509ea01698088c9543fe6c4abf7b41497fa0734e979d5f81f1a17b3",
+    "web/src/Modal.tsx": "00ea444fc91d6beb5224af957b1c5f71bdd1f2851de3ebcf3e5afd4e308047ed",
+    "web/src/PlanInsights.tsx": "d4a9fca4055863a01ccce3d8fe937055299440f428b481047e998a9258287b5e",
+    "web/src/Runtime.tsx": "7f4de96fd790c8a3a1481180f4f3166b9f83b73b30786ac0ee3104dc0364def2",
+    "web/src/StoryProgress.tsx": "7f93b1e5286613e6d07806160f53ea4bff95499fb5d6ec380fd07299e5cfe11b",
+    "web/src/styles.css": "a65988bdbf749b65c607dc2a1a9175777497daf1b25cbeaf6c684edb6c2976fa",
+    "web/src/Terminal.tsx": "d1795299be1328637dad0d4b6506abefafb5afdd22174799248b58ffaf6602f8",
+    "web/src/TerminalDevice.tsx": "ecdbf9995bd54465bf27afafc9f3d2998a4470b4b936d3550bd62828ebc41e6e",
+    "web/src/terminalStorage.ts": "396e0e5cf1622fdcbb81638a8314f580369577cb49c785fe088a7777cc3849a8",
+    "web/src/ToolResult.tsx": "6bd7266e44468aa6b2e20fdd2c2ce91a6e56ed3704448ff62fafa2845c232d39",
+    "web/src/types.ts": "156c5169c47f420e206d0f23c3f61795b9053c4ba6db7761d27791193fa7e923",
+    "web/src/Workflow.tsx": "f92ac757762f76875ff557168391d5d444c82becb678b62c862fadb335ec755e"
+  },
+  "source_hash_encoding": "UTF-8 text normalized to LF; SHA-256"
+}
